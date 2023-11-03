@@ -1,9 +1,9 @@
 from django.db import models
-from traderUser.models import TraderUser
+from traderUser.models import TraderUsers
 # Create your models here.
 
 class UserSales(models.Model):
-    user = models.ForeignKey(TraderUser, on_delete=models.CASCADE)
+    user = models.ForeignKey(TraderUsers, on_delete=models.CASCADE)
     initial_deposit = models.IntegerField()
     profit = models.IntegerField()
     loss = models.IntegerField()

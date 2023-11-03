@@ -18,38 +18,38 @@
                                 <h3>Sign Up</h3>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingText" placeholder="johndoe">
+                                <input type="text" name="username" class="form-control" id="floatingText" placeholder="dannydayne">
                                 <label for="floatingText">Username</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingText" placeholder="First Name">
+                                <input type="text" name="firstname" class="form-control" id="floatingText" placeholder="Danny">
                                 <label for="floatingInput">First Name</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingText" placeholder="Last Name">
+                                <input type="text" name="lastname" class="form-control" id="floatingText" placeholder="Dayne">
                                 <label for="floatingInput">Last Name</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                                 <label for="floatingInput">Email address</label>
                             </div>
                             <div class="form-floating mb-4">
-                                <input type="password" class="form-control" id="floatingPassword password1" placeholder="Password">
+                                <input type="password" name="password1"class="form-control" id="floatingPassword" placeholder="Password">
                                 <label for="floatingPassword">Password</label>
                             </div>
                             <div class="form-floating mb-4">
-                                <input type="password" class="form-control" id="floatingPassword password2" placeholder="Confirm Password">
+                                <input type="password" name="password2" class="form-control" id="floatingPassword" placeholder="Confirm Password">
                                 <label for="floatingPassword">Confirm Password</label>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1 IsAdmin">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                     <label class="form-check-label" for="exampleCheck1">Admin?</label>
                                 </div>
                                 <a href="">Forgot Password</a>
                             </div>
                             <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Sign Up</button>
-                            <p class="text-center mb-0">Already have an Account? <a href="{% url 'login' %}">Sign In</a></p>
+                            <p class="text-center mb-0">Already have an Account? <a href="{% url 'signin' %}">Sign In</a></p>
                         </div>
                     </div>
                 </div>

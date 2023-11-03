@@ -151,7 +151,7 @@
 }
 
 .sidebar .navbar .dropdown-toggle::after {
-    position: absolute;
+    position: relative !important;
     top: 15px;
     right: 15px;
     border: none;
